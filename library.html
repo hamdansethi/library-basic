@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="library.js" defer></script>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Books</th>
+                <th>Authors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Harry Potter</td>
+                <td>J.K. Rowling</td>
+            </tr>
+            <tr>
+                <td>Forty Rules of Love</td>
+                <td>Elif Shafak</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="add">Add A Book</button>
+    
+    <dialog id="bookDialog">
+        <form id="bookForm">
+            <div class="box">
+                <label for="Title">Title</label>
+                <input type="text" id="title" placeholder="The Hobbit" required>
+            </div>
+            <div class="box">
+                <label for="Author">Author</label>
+                <input type="text" id="author" placeholder="J.K. Rowling" required>
+            </div>
+            <div class="box">
+                <label for="Pages">Pages</label>
+                <input type="number" id="pages" placeholder="343" required>
+            </div>
+            <div class="box">
+                <label for="Read?">Already Read?</label>
+                <input type="checkbox" id="read">
+            </div>
+            <div class="btn">
+                <button type="submit">Submit</button>
+                <button class="close">Close</button>
+            </div>  
+        </form>
+    </dialog>    
+</body>
+</html>
